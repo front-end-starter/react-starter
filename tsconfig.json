@@ -1,0 +1,40 @@
+{
+	"compilerOptions": {
+		"target": "ES5",
+		"strict": true,
+		"module": "ESNext",
+		"moduleResolution": "node",
+		"allowJs": true,
+		"experimentalDecorators": true,
+		"allowSyntheticDefaultImports": true,
+		"downlevelIteration": true,
+		"jsx": "react",
+		"lib": [
+			"ES2015",
+			"ES2017.Object",
+			"DOM",
+			"DOM.Iterable",
+			"ScriptHost"
+		],
+
+		"baseUrl": "./src/",
+		"paths": {
+			"@/*": ["*"]
+		},
+
+		"locale": "zh-CN",
+
+		"plugins": [
+			{
+				"name": "typescript-styled-plugin",
+				"tags": [
+					"Styled"
+				]
+			}
+		]
+	},
+
+	"exclude": [
+		"node_modules"
+	]
+}
