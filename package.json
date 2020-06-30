@@ -2,7 +2,7 @@
 	"name": "@emerge_front_end_starter/react_starter",
 	"version": "0.1.0",
 	"description": "React Starter",
-	"license": "UNLICENSED",
+	"license": "MIT",
 	"scripts": {
 		"dev": "TSC_WATCHFILE=\"UseFsEventsWithFallbackDynamicPolling\" TS_NODE_PROJECT=\"./build/webpack.tsconfig.json\" webpack-dev-server --progress --config ./build/dev.webpack.config.ts",
 		"build": "TS_NODE_PROJECT=\"./build/webpack.tsconfig.json\" webpack-cli --progress --config ./build/prod.webpack.config.ts",
