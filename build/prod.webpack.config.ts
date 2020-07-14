@@ -1,9 +1,10 @@
+import type { Configuration } from 'webpack';
+
 import * as Path from 'path';
 
-import * as Webpack from 'webpack';
-import MergeWebpackPlugin from 'webpack-merge';
 import { default as TerserWebpackPlugin } from 'terser-webpack-plugin';
 import HtmlWebpackPlugin from 'html-webpack-plugin';
+import { merge } from 'webpack-merge';
 
 import {
 	config as common_config,
@@ -11,7 +12,7 @@ import {
 } from './common.webpack.config';
 
 
-const config: Webpack.Configuration = MergeWebpackPlugin(common_config, {
+const config: Configuration = merge(common_config, {
 	mode: 'production',
 
 	output: {

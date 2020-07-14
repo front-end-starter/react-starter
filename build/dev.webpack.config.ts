@@ -1,13 +1,14 @@
+import type { Configuration } from 'webpack';
+
 import * as Path from 'path';
 
-import * as Webpack from 'webpack';
-import MergeWebpackPlugin from 'webpack-merge';
 import HtmlWebpackPlugin from 'html-webpack-plugin';
+import { merge } from 'webpack-merge';
 
 import { config as common_config, index_html_config } from './common.webpack.config';
 
 
-const config: Webpack.Configuration = MergeWebpackPlugin(common_config, {
+const config: Configuration = merge(common_config, {
 
 	mode: 'development',
 

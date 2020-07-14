@@ -1,6 +1,6 @@
 {
 	"name": "@emerge_front_end_starter/react_starter",
-	"version": "0.1.0",
+	"version": "0.1.1",
 	"description": "React Starter",
 	"license": "MIT",
 	"scripts": {
@@ -10,13 +10,13 @@
 		"commands": "node ./bin/main.js"
 	},
 	"devDependencies": {
-		"@loadable/component": "5.12",
-		"@material-ui/core": "4.10",
+		"@loadable/component": "5.13",
+		"@material-ui/core": "4.11",
 		"@reduxjs/toolkit": "1.4",
 		"@types/clean-webpack-plugin": "0.1",
 		"@types/copy-webpack-plugin": "6.0",
 		"@types/html-webpack-plugin": "3.2",
-		"@types/loadable__component": "5.10",
+		"@types/loadable__component": "5.13",
 		"@types/node": "14.0",
 		"@types/react": "16.9",
 		"@types/react-dom": "16.9",
@@ -28,7 +28,6 @@
 		"@types/terser-webpack-plugin": "3.0",
 		"@types/webpack": "4.41",
 		"@types/webpack-dev-server": "3.11",
-		"@types/webpack-merge": "4.1",
 		"clean-webpack-plugin": "3.0",
 		"copy-webpack-plugin": "6.0",
 		"cross-spawn": "7.0",
@@ -45,11 +44,11 @@
 		"react-router-dom": "5.2",
 		"redux": "4.0",
 		"redux-dynamic-modules": "5.2",
-		"rxjs": "6.5",
+		"rxjs": "6.6",
 		"rxjs-hooks": "0.6",
 		"styled-components": "5.1",
 		"terser-webpack-plugin": "3.0",
-		"ts-loader": "7.0",
+		"ts-loader": "8.0",
 		"ts-node": "8.10",
 		"tsconfig-paths": "3.9",
 		"tsconfig-paths-webpack-plugin": "3.2",
@@ -58,7 +57,7 @@
 		"webpack": "4.43",
 		"webpack-cli": "3.3",
 		"webpack-dev-server": "3.11",
-		"webpack-merge": "4.2"
+		"webpack-merge": "5.0"
 	},
 	"installConfig": {
 		"pnp": true

@@ -161,13 +161,13 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@emerge_front_end_starter/react_starter@workspace:."
   dependencies:
-    "@loadable/component": 5.12
-    "@material-ui/core": 4.10
+    "@loadable/component": 5.13
+    "@material-ui/core": 4.11
     "@reduxjs/toolkit": 1.4
     "@types/clean-webpack-plugin": 0.1
     "@types/copy-webpack-plugin": 6.0
     "@types/html-webpack-plugin": 3.2
-    "@types/loadable__component": 5.10
+    "@types/loadable__component": 5.13
     "@types/node": 14.0
     "@types/react": 16.9
     "@types/react-dom": 16.9
@@ -179,7 +179,6 @@ __metadata:
     "@types/terser-webpack-plugin": 3.0
     "@types/webpack": 4.41
     "@types/webpack-dev-server": 3.11
-    "@types/webpack-merge": 4.1
     clean-webpack-plugin: 3.0
     copy-webpack-plugin: 6.0
     cross-spawn: 7.0
@@ -196,11 +195,11 @@ __metadata:
     react-router-dom: 5.2
     redux: 4.0
     redux-dynamic-modules: 5.2
-    rxjs: 6.5
+    rxjs: 6.6
     rxjs-hooks: 0.6
     styled-components: 5.1
     terser-webpack-plugin: 3.0
-    ts-loader: 7.0
+    ts-loader: 8.0
     ts-node: 8.10
     tsconfig-paths: 3.9
     tsconfig-paths-webpack-plugin: 3.2
@@ -209,7 +208,7 @@ __metadata:
     webpack: 4.43
     webpack-cli: 3.3
     webpack-dev-server: 3.11
-    webpack-merge: 4.2
+    webpack-merge: 5.0
   languageName: unknown
   linkType: soft
 
@@ -257,27 +256,28 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@loadable/component@npm:5.12":
-  version: 5.12.0
-  resolution: "@loadable/component@npm:5.12.0"
+"@loadable/component@npm:5.13":
+  version: 5.13.1
+  resolution: "@loadable/component@npm:5.13.1"
   dependencies:
     "@babel/runtime": ^7.7.7
     hoist-non-react-statics: ^3.3.1
+    react-is: ^16.12.0
   peerDependencies:
     react: ">=16.3.0"
-  checksum: 686f53246f55424c18951ea90cd185b6a04736957cef3b750147944f8a2f88e7afa3f36716346de42fef241737f8ebb79a6a2e1d1038cb941839f06ee5bbfc34
+  checksum: 55ba920ef5a26f9dd0ed928663e0a0b534a74b71af4697b4d65a10c96fb4ea68fd0e16b6deb63392c312cf4df6cd3c3adcb5be8ee61662a2951d588e32af268a
   languageName: node
   linkType: hard
 
-"@material-ui/core@npm:4.10":
-  version: 4.10.1
-  resolution: "@material-ui/core@npm:4.10.1"
+"@material-ui/core@npm:4.11":
+  version: 4.11.0
+  resolution: "@material-ui/core@npm:4.11.0"
   dependencies:
     "@babel/runtime": ^7.4.4
     "@material-ui/styles": ^4.10.0
     "@material-ui/system": ^4.9.14
     "@material-ui/types": ^5.1.0
-    "@material-ui/utils": ^4.9.12
+    "@material-ui/utils": ^4.10.2
     "@types/react-transition-group": ^4.2.0
     clsx: ^1.0.4
     hoist-non-react-statics: ^3.3.2
@@ -292,7 +292,7 @@ __metadata:
   peerDependenciesMeta:
     "@types/react":
       optional: true
-  checksum: 3a0390f8f40a62b5d4f8b5c6b29588102e222a99d276f0865bcfca688a7eef6f26e70bd370fbc29bf984e6b9d4463523fafe1c8670970f0c4e975560c6ae799c
+  checksum: 02b3ada79f258f5e5d64fbab804c65d07ea3e8b2533e40c18fcab49c8065ebcb5acfea4ea0b033f2d91dee1fee3a6720f567c0c60f3be1bb5bd754be2d9bf322
   languageName: node
   linkType: hard
 
@@ -358,7 +358,21 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@material-ui/utils@npm:^4.9.12, @material-ui/utils@npm:^4.9.6":
+"@material-ui/utils@npm:^4.10.2":
+  version: 4.10.2
+  resolution: "@material-ui/utils@npm:4.10.2"
+  dependencies:
+    "@babel/runtime": ^7.4.4
+    prop-types: ^15.7.2
+    react-is: ^16.8.0
+  peerDependencies:
+    react: ^16.8.0
+    react-dom: ^16.8.0
+  checksum: 53b2a9ca15fce2b692c41bec9e59a10c47c2527a864f81081432d92bd82fbf8748200df6c52dc4ae459f041740ec599cd34f62b210a50b27992b4032742a273f
+  languageName: node
+  linkType: hard
+
+"@material-ui/utils@npm:^4.9.6":
   version: 4.9.12
   resolution: "@material-ui/utils@npm:4.9.12"
   dependencies:
@@ -596,12 +610,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/loadable__component@npm:5.10":
-  version: 5.10.0
-  resolution: "@types/loadable__component@npm:5.10.0"
+"@types/loadable__component@npm:5.13":
+  version: 5.13.0
+  resolution: "@types/loadable__component@npm:5.13.0"
   dependencies:
     "@types/react": "*"
-  checksum: 269df22025a07765ca370f76e9fd0f639fa36485bb5e36cc20566de2e8aaf71e7465352ca6ecfdd1442fd56d4c58e2bc51bbf7f02b64eb45574e1776b08559ad
+  checksum: 172b5587585ad55684ff47f2cd34087bb5da449077ac05de06862fe7d6e202e5ac5665f296e1f435c337ac452e3728191a534fc71f466c18b7c9d6296998674e
   languageName: node
   linkType: hard
 
@@ -800,15 +814,6 @@ __metadata:
     "@types/serve-static": "*"
     "@types/webpack": "*"
   checksum: 35abdc86a5a78ea72bf108b95825200d33515f71993026942562ea41b646f3cd075163169182176498fe1a0d0cf75c46282364de02bbbd8f17f27796fab25a3d
-  languageName: node
-  linkType: hard
-
-"@types/webpack-merge@npm:4.1":
-  version: 4.1.5
-  resolution: "@types/webpack-merge@npm:4.1.5"
-  dependencies:
-    "@types/webpack": "*"
-  checksum: 2988bb97d79c48cb490832caf8b7cd94be33189aab247761ca669c3ac08741488cd5a93bef8a6e0164b1271b301999fb52b3623af05c1e6021f2cf470059d419
   languageName: node
   linkType: hard
 
@@ -2033,6 +2038,17 @@ __metadata:
     strip-ansi: ^5.2.0
     wrap-ansi: ^5.1.0
   checksum: 25e61dc985279bd7ec16715df53288346e5c36ff43956f7de31bf55b2432ce1259e75148b28c3ed41265caf1baee1d204363c429ae5fee54e6f78bed5a5d82b3
+  languageName: node
+  linkType: hard
+
+"clone-deep@npm:^4.0.1":
+  version: 4.0.1
+  resolution: "clone-deep@npm:4.0.1"
+  dependencies:
+    is-plain-object: ^2.0.4
+    kind-of: ^6.0.2
+    shallow-clone: ^3.0.0
+  checksum: b0146d66cabc7e609d23d10155dcc88e2f74b03539b3b65f8a05f889500e2a78b6c6265a744445d009d512a1afa16836f62aa5737d462027142984c2d41130c8
   languageName: node
   linkType: hard
 
@@ -6219,7 +6235,7 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
-"react-is@npm:16.13, react-is@npm:^16.6.0, react-is@npm:^16.7.0, react-is@npm:^16.8.0, react-is@npm:^16.8.1, react-is@npm:^16.9.0":
+"react-is@npm:16.13, react-is@npm:^16.12.0, react-is@npm:^16.6.0, react-is@npm:^16.7.0, react-is@npm:^16.8.0, react-is@npm:^16.8.1, react-is@npm:^16.9.0":
   version: 16.13.1
   resolution: "react-is@npm:16.13.1"
   checksum: 11bcf1267a314a522615f626f3ce3727a3a24cdbf61c4d452add3550a7875326669631326cfb1ba3e92b6f72244c32ffecf93ad21c0cad8455d3e169d0e3f060
@@ -6721,12 +6737,12 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
-"rxjs@npm:6.5":
-  version: 6.5.5
-  resolution: "rxjs@npm:6.5.5"
+"rxjs@npm:6.6":
+  version: 6.6.0
+  resolution: "rxjs@npm:6.6.0"
   dependencies:
     tslib: ^1.9.0
-  checksum: a3882e0374af8aa32459ea9219fdcf24cb5a943cdf35f50da4ded48435ec474647c315b85c3e7b703927a55689e54037538cbd24789548d07b74e4865c4adb78
+  checksum: 32d733487caf42cc87bb0f93da5be400f2817f94a9f8af9580ab36f480aa553f584e0cfb4625b8321e8f9490094a510f9eb5e951a1d6219281d1eac1525d007b
   languageName: node
   linkType: hard
 
@@ -6946,6 +6962,15 @@ fsevents@^1.2.7:
   bin:
     sha.js: ./bin.js
   checksum: 7554240ab76e683f7115123eb4815aae16b5fc6f2cdff97009831ad5b17b107ffcef022526211f7306957bce7a67fa4d0ccad79a3040c5073414365595e90516
+  languageName: node
+  linkType: hard
+
+"shallow-clone@npm:^3.0.0":
+  version: 3.0.1
+  resolution: "shallow-clone@npm:3.0.1"
+  dependencies:
+    kind-of: ^6.0.2
+  checksum: e329e054c286f0681fd8a9e5c353999519332f12510a99e189ea9cfa0337adb6f1414639d44493418ef6790a693b78c354525269f5db25a9feddd8b4d7891a62
   languageName: node
   linkType: hard
 
@@ -7687,9 +7712,9 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
-"ts-loader@npm:7.0":
-  version: 7.0.4
-  resolution: "ts-loader@npm:7.0.4"
+"ts-loader@npm:8.0":
+  version: 8.0.0
+  resolution: "ts-loader@npm:8.0.0"
   dependencies:
     chalk: ^2.3.0
     enhanced-resolve: ^4.0.0
@@ -7698,7 +7723,7 @@ fsevents@^1.2.7:
     semver: ^6.0.0
   peerDependencies:
     typescript: "*"
-  checksum: 027cb130b27e553e5fbc29194eb057f0a61f1f351eeab8d20a081fd133e00bc196b656235a5848893df44c83c19e012778d211dbf8004044d08777cb7e248037
+  checksum: 0ae508749019ef746e4cd7141ab6fd49aa29e9db975f721f80896ca844a30e110c3669828184e6b4f2e1c0805f0fdfce0ebabe1a72a92b8c4f9a27e210f946ab
   languageName: node
   linkType: hard
 
@@ -8236,12 +8261,13 @@ typescript@3.9:
   languageName: node
   linkType: hard
 
-"webpack-merge@npm:4.2":
-  version: 4.2.2
-  resolution: "webpack-merge@npm:4.2.2"
+"webpack-merge@npm:5.0":
+  version: 5.0.9
+  resolution: "webpack-merge@npm:5.0.9"
   dependencies:
-    lodash: ^4.17.15
-  checksum: 038c6d8ba45f538ce8e4505a8a3d90fbd2e554ba2065bacffe4d7cff0229cce9f0d983bf56061f8e0fef86c711da7232f88681aab285c06673b3916b1040cd9e
+    clone-deep: ^4.0.1
+    wildcard: ^2.0.0
+  checksum: 7d31955ae5595ca32f6d24093c0fdfa34788c94f5f2a1dbc573343f1dc67d2cd1306340b9b279acd80ae7a66053b928ab52325c9652989fd37d85beb1dc86e53
   languageName: node
   linkType: hard
 
@@ -8348,6 +8374,13 @@ typescript@3.9:
   dependencies:
     string-width: ^4.0.0
   checksum: 729c30582e49bdcb1372216eedfd71d1640a1344a4b4e970bc9f33d575b56b130f530b383fbab2cf2bcffb76ea4357e6a66939778d8de91ca66037651d94e01a
+  languageName: node
+  linkType: hard
+
+"wildcard@npm:^2.0.0":
+  version: 2.0.0
+  resolution: "wildcard@npm:2.0.0"
+  checksum: 207baede4d6d41fc1aefcc4727c95ca6f29eaaf4d66478665fe0ac17232709637426ae96fd79deb3b68da3564e7bde7f2be63e5c3665ac8f63ee92364c0a2dd3
   languageName: node
   linkType: hard
 
