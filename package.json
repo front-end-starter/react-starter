@@ -1,13 +1,14 @@
 {
 	"name": "@emerge_front_end_starter/react_starter",
-	"version": "0.2.0",
+	"version": "0.3.0",
 	"description": "React Starter",
 	"license": "MIT",
 	"scripts": {
 		"dev": "TSC_WATCHFILE=\"UseFsEventsWithFallbackDynamicPolling\" TS_NODE_PROJECT=\"./build/webpack.tsconfig.json\" webpack-dev-server --progress --config ./build/dev.webpack.config.ts",
 		"build": "TS_NODE_PROJECT=\"./build/webpack.tsconfig.json\" webpack-cli --progress --config ./build/prod.webpack.config.ts",
 		"build:commands": "tsc -p ./commands/tsconfig.json",
-		"commands": "node ./bin/main.js"
+		"commands": "node ./bin/main.js",
+		"http_server": "http-server './dist/' -p 80 -g -P 'http://localhost?'"
 	},
 	"devDependencies": {
 		"@loadable/component": "5.13",
@@ -33,6 +34,7 @@
 		"cross-spawn": "7.0",
 		"fsevents": "2.1",
 		"html-webpack-plugin": "4.3",
+		"http-server": "0.12",
 		"ink": "2.7",
 		"pnp-webpack-plugin": "1.6",
 		"react": "16.13",
