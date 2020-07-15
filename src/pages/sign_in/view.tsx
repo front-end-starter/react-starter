@@ -1,4 +1,6 @@
-import * as React from 'react';
+import type { FC } from 'react';
+
+import { createElement } from 'react';
 import {
 	Grid,
 	Paper,
@@ -14,7 +16,7 @@ import {
 } from './style';
 
 
-export const View: React.FC = () => (
+export const View: FC = () => (
 	<MainGrid container direction="row" justify="center">
 		<Grid item xs={ 8 }>
 			<Typography variant="h5">基础系统</Typography>

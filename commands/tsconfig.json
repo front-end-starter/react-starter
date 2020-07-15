@@ -10,6 +10,7 @@
 		"allowSyntheticDefaultImports": true,
 		"downlevelIteration": true,
 		"jsx": "react",
+		"jsxFactory": "createElement",
 		"outDir": "../bin/"
 	},
 

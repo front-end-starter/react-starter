@@ -1,6 +1,7 @@
+import type { FC } from 'react';
 import type { Props as RoutesProps } from './index';
 
-import * as React from 'react';
+import { createElement } from 'react';
 import {
 	Switch,
 	Route,
@@ -12,7 +13,7 @@ export interface Props extends RoutesProps {
 
 };
 
-export const View: React.FC<Props> = ({
+export const View: FC<Props> = ({
 	routes,
 	extra_props = {},
 	switch_props = {},

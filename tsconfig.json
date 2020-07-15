@@ -9,6 +9,7 @@
 		"allowSyntheticDefaultImports": true,
 		"downlevelIteration": true,
 		"jsx": "react",
+		"jsxFactory": "createElement",
 		"lib": [
 			"ES2015",
 			"ES2017.Object",

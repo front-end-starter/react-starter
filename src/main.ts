@@ -1,7 +1,7 @@
 /// <reference path="./@types/index.d.ts" />
 
-import * as React from 'react';
-import * as ReactDOM from 'react-dom';
+import { createElement } from 'react';
+import { render } from 'react-dom';
 
 import { PageMain } from '@/pages/main';
 
@@ -10,8 +10,8 @@ import { store } from '@/modules';
 
 
 (async () => {
-	ReactDOM.render(
-		React.createElement(PageMain, { routes, store }, null),
+	render(
+		createElement(PageMain, { routes, store }, null),
 		document.getElementById('main')
 	);
 })();

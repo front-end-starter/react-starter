@@ -1,8 +1,9 @@
+import type { FC } from 'react';
 import type { Theme } from '@material-ui/core';
 import type { RouteConfig } from '@/router';
 import type { ModuleStore } from '@/modules';
 
-import * as React from 'react';
+import { createElement } from 'react';
 import { BrowserRouter as Router } from 'react-router-dom';
 import { Provider } from 'react-redux';
 import { ThemeProvider } from 'styled-components';
@@ -30,7 +31,7 @@ export interface Props {
 /**
  * 视图
  */
-export const View: React.FC<Props> = ({
+export const View: FC<Props> = ({
 	routes,
 	theme,
 	is_sign_in

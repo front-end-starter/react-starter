@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { createElement, useState, useEffect } from 'react';
 import { render, Color } from 'ink';
 
 const Counter = () => {
