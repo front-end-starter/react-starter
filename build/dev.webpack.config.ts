@@ -36,6 +36,7 @@ const config: Configuration = merge(common_config, {
 		watchOptions: {
 			ignored: ['node_modules']
 		},
+		stats: 'minimal',
 		clientLogLevel: 'silent'
 	},
 

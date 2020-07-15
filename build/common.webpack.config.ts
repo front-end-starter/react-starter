@@ -1,8 +1,9 @@
 /// <reference path="./@types/index.d.ts" />
 
+import type { Configuration } from 'webpack';
+
 import * as Path from 'path';
 
-import * as Webpack from 'webpack';
 import PnpWebpackPlugin from 'pnp-webpack-plugin';
 import TsconfigPathsPlugin from 'tsconfig-paths-webpack-plugin';
 import HtmlWebpackPlugin from 'html-webpack-plugin';
@@ -25,7 +26,7 @@ const index_html_config: HtmlWebpackPlugin.Options = {
 /**
  * webpack 公共配置
  */
-const config: Webpack.Configuration = {
+const config: Configuration = {
 
 	context: Path.resolve(__dirname, '../src'),
 

@@ -6416,7 +6416,7 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
-"react@npm:16.13":
+"react@npm:*, react@npm:16.13":
   version: 16.13.1
   resolution: "react@npm:16.13.1"
   dependencies:
