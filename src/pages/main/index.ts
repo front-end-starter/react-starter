@@ -1,9 +1,10 @@
+import type { FC } from 'react';
 import type { RouteConfig } from '@/router';
 import type { ModuleStore } from '@/modules';
 import type { ModuleState as SignInUserModuleState } from '@/modules/sign_in_user';
 import type { Props as ViewProps } from './view';
 
-import * as React from 'react';
+import { createElement, useMemo } from 'react';
 import { Provider, connect } from 'react-redux';
 import { DynamicModuleLoader } from 'redux-dynamic-modules';
 import { useMediaQuery, createMuiTheme } from '@material-ui/core';
@@ -28,7 +29,7 @@ export const PageMain: React.FC<Props> = ({
 }) => {
 	const prefers_dark_mode = useMediaQuery('(prefers-color-scheme: dark)');
 
-	const theme = React.useMemo(
+	const theme = useMemo(
 		() => createMuiTheme({
 			palette: {
 				type: prefers_dark_mode ? 'dark' : 'light',
@@ -99,11 +100,11 @@ export const PageMain: React.FC<Props> = ({
 		})
 	)(View);
 
-	const DynamicModuleView = React.createElement(DynamicModuleLoader, {
+	const DynamicModuleView = createElement(DynamicModuleLoader, {
 		modules: [sign_in_user_module]
-	}, React.createElement(ConnectView));
+	}, createElement(ConnectView));
 
-	return React.createElement(Provider, {
+	return createElement(Provider, {
 		store: store
 	}, DynamicModuleView);
 };
