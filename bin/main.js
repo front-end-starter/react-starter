@@ -12,7 +12,7 @@ const Counter = () => {
             clearInterval(timer);
         };
     }, []);
-    return react_1.createElement(ink_1.Color, { green: true },
+    return react_1.createElement(ink_1.Text, { color: "green" },
         counter,
         " tests passed");
 };

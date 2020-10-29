@@ -1,5 +1,5 @@
 import { createElement, useState, useEffect } from 'react';
-import { render, Color } from 'ink';
+import { render, Text } from 'ink';
 
 const Counter = () => {
 	const [counter, setCounter] = useState(0);
@@ -14,7 +14,7 @@ const Counter = () => {
 		};
 	}, []);
 
-	return <Color green>{counter} tests passed</Color>;
+	return <Text color="green">{counter} tests passed</Text>;
 };
 
 render(<Counter />);

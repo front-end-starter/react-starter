@@ -11,7 +11,10 @@
 		"downlevelIteration": true,
 		"jsx": "react",
 		"jsxFactory": "createElement",
-		"outDir": "../bin/"
+
+		"outDir": "../bin/",
+
+		"types": []
 	},
 
 	"files": [

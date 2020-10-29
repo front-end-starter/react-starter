@@ -23,6 +23,8 @@
 			"@/*": ["*"]
 		},
 
+		"types": [],
+
 		"locale": "zh-CN",
 
 		"plugins": [

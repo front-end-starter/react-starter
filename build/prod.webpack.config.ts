@@ -16,29 +16,15 @@ const config: Configuration = merge(common_config, {
 	mode: 'production',
 
 	output: {
-		filename: '[name].[hash].min.js',
-		chunkFilename: '[name].[hash].min.js'
+		filename: 'assets/scripts/[name].min.js',
+		chunkFilename: 'assets/scripts/[name].[hash].min.js'
 	},
 
 	optimization: {
 		minimizer: [
 			new TerserWebpackPlugin({
-				parallel: true,
-				sourceMap: false
-			}),
-
-			/*new OptimizeCssAssetsPlugin({
-				cssProcessorPluginOptions: {
-					preset: [
-						'default',
-						{
-							discardComments: {
-								removeAll: true
-							}
-						}
-					]
-				}
-			})*/
+				parallel: true
+			})
 		]
 	},
 

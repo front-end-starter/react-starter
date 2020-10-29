@@ -4,7 +4,7 @@ import type { Configuration } from 'webpack';
 
 import * as Path from 'path';
 
-import PnpWebpackPlugin from 'pnp-webpack-plugin';
+
 import TsconfigPathsPlugin from 'tsconfig-paths-webpack-plugin';
 import HtmlWebpackPlugin from 'html-webpack-plugin';
 import { CleanWebpackPlugin } from 'clean-webpack-plugin';
@@ -35,33 +35,29 @@ const config: Configuration = {
 	},
 
 	output: {
-		path: Path.resolve(__dirname, '../dist/assets/scripts/'),
-		publicPath: '/assets/scripts/',
-		filename: '[name].min.js',
-		chunkFilename: '[name].[hash].min.js'
+		path: Path.resolve(__dirname, '../dist/'),
+		publicPath: '/'
 	},
 
 	resolve: {
 		extensions: ['.ts', '.tsx', '.js'],
 
 		plugins: [
-			PnpWebpackPlugin,
 			new TsconfigPathsPlugin()
 		]
-	},
-
-	resolveLoader: {
-		plugins: [
-			PnpWebpackPlugin.moduleLoader(module),
-		],
 	},
 
 	module: {
 		rules: [
 			{
 				test: /\.ts(x?)$/,
-				loader: require.resolve('ts-loader'),
+				loader: 'ts-loader',
 				exclude: /node_modules/
+			},
+
+			{
+				test: /\.m?js$/,
+				resolve: { fullySpecified: false }
 			}
 		]
 	},

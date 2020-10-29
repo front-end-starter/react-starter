@@ -1,3 +1,3 @@
-/// <reference path="./pnp-webpack-plugin/index.d.ts" />
+/// <reference types="webpack-dev-server" />
 
-/// <reference path="./webpack/index.d.ts" />
+/// <reference path="./terser_webpack_plugin/index.d.ts" />

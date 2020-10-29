@@ -15,24 +15,23 @@ const config: Configuration = merge(common_config, {
 	devtool: 'cheap-module-source-map',
 
 	output: {
-		filename: '[name].js',
-		chunkFilename: '[name].[hash].js'
+		filename: 'assets/scripts/[name].js',
+		chunkFilename: 'assets/scripts/[name].[hash].js'
 	},
 
 	devServer: {
 		host: '0.0.0.0',
 		port: 80,
 		useLocalIp: true,
-		//contentBase: Path.resolve(__dirname, '../dist/'),
-		//publicPath: '/assets/scripts/',
+		disableHostCheck: true,
+		publicPath: '/',
 		index: 'index.html',
 		historyApiFallback: {
 			rewrites: [
-				{ from: /.*/g, to: '/assets/scripts/index.html' }
+				{ from: /.*/g, to: '/index.html' }
 			]
 		},
 		hot: true,
-		//writeToDisk: true,
 		watchOptions: {
 			ignored: ['node_modules']
 		},
